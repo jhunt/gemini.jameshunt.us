@@ -1,0 +1,8 @@
+version: '3'
+services:
+  agate:
+    image: snowgoons/agate
+    ports: ['1965:1965']
+    volumes:
+      - $PWD/conf:/usr/local/gemini/conf/
+      - $PWD/docs:/usr/local/gemini/geminidocs
