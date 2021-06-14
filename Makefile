@@ -10,7 +10,7 @@ conf/gemini-key.rsa:
 	            -subj "/CN=jameshunt.us"
 
 index:
-	(cat parts/index.gmi && \
+	(cat parts/index.gmi && echo && \
 	 find docs/log -name '*.gmi' | sort -r | xargs ./bin/index-log-entry) > docs/index.gmi
 
 up: cert
