@@ -1,0 +1,24 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+for my $f (@ARGV) {
+	(my $u = $f) =~ s|.*log/|/log/|;
+	next unless $f =~ m/(\d{4}-\d{2}-\d{2})/;
+	my $d = $1;
+	open my $fh, "<", $f
+		or die "$f: $!\n";
+	my $t;
+	while (<$fh>) {
+		chomp;
+		if (m/^# /) {
+			($t = $_) =~ s/^# +//;
+			last;
+		}
+	}
+	close $fh;
+
+	$t = $u unless $t;
+
+	printf "=> %s [%s] %s\n", $u, $d, $t;
+}
