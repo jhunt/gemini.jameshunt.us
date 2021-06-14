@@ -3,4 +3,5 @@
 Welcome, fellow Gemini nerds, to my gemlog.
 
 ## gemlog
+=> /log/2021-06-13a-xanadu.gmi
 => /log/2021-06-13-welcome.gmi

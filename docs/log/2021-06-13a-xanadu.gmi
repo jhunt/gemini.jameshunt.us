@@ -1,0 +1,54 @@
+# Xanadu
+
+> In Xanadu did Kubla Kahn
+> A stately pleasure-dome decree
+
+I've been fascinated by the Xanadu project -- as well as its spiritual forebear, Vannevar Bush' Memex -- for several years now.  While working up the screenshots and technical specifications for my own Dossier project, I also came across the Tools for Thought scene, and Gordon Brander's Subconscious tool / newsletter.
+
+=> https://subconscious.substack.com/                                Subconscious, by Gordon Brander (a Substack)
+
+=> https://xanadu.com.au/ted/XUsurvey/xuDation.html                  (Xanadu) Xanalogical Structure & Parallel Documents
+
+=> https://blog.fission.codes/tools-for-thought-interchange-part-1/  Tools for Thought Interchange
+
+## The Future of the Web That Was Never To Be
+
+Xanadu, as I've heard it explained and even self-described, was an ambitious project to codify and quantify knowledge, ideas, and thoughts, and track their interrelation and derivation.  Why, it was nothing short of the complete digitization of the sum total of human knowledge.  Is it any wonder it never really got off the ground (technically) let alone gained any sizable mind share?
+
+I have been fortunate to live in transitional times.  I remember life before the always-on broadband connection.  I can quite distinctly (and fondly, I might add) recall rationing my "online" time to last me the month.  I would plan out which sites I would visit, what I hoped to get out of them.  I would check the forums, read the news sites for the things I was into at the time -- mostly fantasy world building and language creation; discrete activities that had specific places to go.
+
+There was no Google, at least not until I hit high school.
+
+I witnessed the unlikely rise of the wiki as a primary means of information consolidation and propagation.  These days, Wikipedia is fairly pedestrian, but a whole realm of wild and wonderful wikis exist for games, fantasy worlds, science fiction television, and more!
+
+Before my eyes, the blogosphere was birthed, boomed, and went bust.  The personal home page moved to LiveJournal, then MySpace, then Facebook, then shattered into a dozen different properties -- Twitter for the snark; Instagram for the glamour, Hacker News for the ... pedantry?  We now exist across numerous digital fiefdoms, all built atop HTTP, HTML, and the world wide web.
+
+Xanadu had far loftier ambitions than the ad-laden behemoth that is the web circa 2021.  Ambitions that I don't actually know could have been realized.  Goals that were beyond achievement.  Cataloging all of humanity's knowledge is no small feat.
+
+## What is the Shape of a Thought?
+
+The first thing we have to tackle?  What, precisely, is an idea?  What separates an idea from a fantasy?  What differentiates knowledge from mere data?  Is data somehow less valuable than wisdom?  Or are we just inventing epistemological taxonomy with respect to thought because we don't have the slightest clue what or even how we think?
+
+Xanadu (and Bush's Memex, for that matter) seem to pre-suppose that ideas are things that can be captured.  They can be imprisoned in the carefully arranged glyphs of language; written down and solidified onto the page, or the phosphor of a computer screen.  That once we've committed the idea to words and symbols, we can then categorizes, classify, and cross-reference them until we gain some deeper understanding.
+
+These early hypertext systems labor under the (mis)conception that ideas are static, and once described, they will persevere, forever crystallized in our knowledge management software.
+
+The web we ended up with; the early one -- hypertext transfer protocol and a static, markup-driven "language" in which to express our ideas -- was quite different.  Links are one way.  I may say "here's my take on X, Y, and Z; if you want to learn more go _here_".  Yet, _here_ may not exist in a hundred days, or a hundred years.  Is that okay?
+
+Xanadu supporters would vehemently shout NO!
+
+But I think it's okay.  The web has to be breakable to be resilient.  If I had to get approval for every link I was ever going to put down in a blog, I'd never be able to link to something and criticize it.  If, like Xanadu, the HTTP web had actually incorporated paywalls into the DNA of the hypertext itself, I don't think we'd have less fragmentation of information.
+
+## Gemini - Breaking The Web Just A Little More
+
+Which brings me (I think) to my point: ideas are dynamic.  We arrive at them by meandering in our thought.  By chasing down tangents and exploring weird, semi-related thought branches and whims.  You can't just write down an idea once, set down the keyboard and be done.
+
+Ideas *require* repetition.
+
+=> https://gemini.circumlunar.space/docs/faq.html    Gemini
+
+Gemini, which I literally found this morning, is one such repetition / reification / reiteration.  "A" web, if not "the" web, should be small, simple, and easy to understand.  A lot of people on Hacker News are angry (oh my gosh!) that the community behind Gemini didn't just subvert HTTP/HTML instead.  Maybe remove JavaScript.  Maybe cripple CSS.  Maybe prohibit an HTML element of three.
+
+But the _idea_ of Gemini is not that we should take the system we have and remove features until it's less than before.  The _idea_ is that we can start with a blank slate, and implement the system we want.  The system we will use.
+
+I hope Gemini frees me up to write more.
