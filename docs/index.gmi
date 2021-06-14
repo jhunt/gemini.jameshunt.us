@@ -2,6 +2,18 @@
 
 Welcome, fellow Gemini nerds, to my gemlog.
 
-## gemlog
-=> /log/2021-06-13a-xanadu.gmi
-=> /log/2021-06-13-welcome.gmi
+I also have an HTTP site:
+
+=> https://jameshunt.us
+
+I'm also on Twitter, @iamjameshunt, and my code is (mostly) all on GitHub.
+
+=> https://twitter.com/iamjameshunt
+
+=> https://github.com/jhunt
+
+## ./gemlog
+
+These are random thoughts and musings.  Sometimes I just need to ramble.
+=> /log/2021-06-13a-xanadu.gmi [2021-06-13] Xanadu
+=> /log/2021-06-13-welcome.gmi [2021-06-13] Welcome!

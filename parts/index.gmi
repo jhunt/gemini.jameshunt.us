@@ -2,4 +2,16 @@
 
 Welcome, fellow Gemini nerds, to my gemlog.
 
-## gemlog
+I also have an HTTP site:
+
+=> https://jameshunt.us
+
+I'm also on Twitter, @iamjameshunt, and my code is (mostly) all on GitHub.
+
+=> https://twitter.com/iamjameshunt
+
+=> https://github.com/jhunt
+
+## ./gemlog
+
+These are random thoughts and musings.  Sometimes I just need to ramble.
