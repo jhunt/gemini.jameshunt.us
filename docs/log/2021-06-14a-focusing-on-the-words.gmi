@@ -1,0 +1,31 @@
+# Focusing on the Words
+
+A long time ago, I wrote a small Perl utility for taking plain text markdown and turning it into HTML.  I called it "verse", because writing a blog in markdown, without a browser, felt like composing poetry.
+
+=> https://github.com/jhunt/verse Verse | Website Poetry
+
+The years wound on, and I added more stuff to the system.  Static pages, automatic time stamping, sub-titles, a JavaScript library for mathematics - little bits and baubles, adorning the simple austerity of a no-nonsense static site generator.  MY no-nonsense static site generator.
+
+I used Verse for all kinds of websites.  Personal blogs.  Corporate brochure-ware sites.  I even wrote some business management "software" and tucked it safely behind TLS and HTTP basic authentication.  I still generate my invoices this way.
+
+Eventually, however, the realities of operating a site on the world wide web caught up to me and one by one I converted my Verse sites over to WordPress, MediaWiki, and other "content management systems."
+
+## Back to Basics With Gemini
+
+A few days ago, I met Gemini, a new protocol for sharing information atop the Internet, if not via the world wide web.  Heavily inspired by Gopher, a protocol that predates HTTP and what we know call just "the web", Gemini is the definition of no-frills.  There are no cookies.  No ads.  No scripts.  Just words.  Beautiful, precious words.
+
+Maya Angelou is known for writing in empty hotel rooms.  She would ask the hotel staff to remove the paintings from the wall, creating an environment with as few distractions as possible.  No music.  No noise.  Nothing to look at.  Just a place, to write.
+
+Stephen King, in his book _On Writing_, retells the tale of his first writing desk, under the eaves in the attic.  It faced a large nail onto which he hung each and every rejection letter he ever received.  When he finally did make it big, a New York Times best selling author, he had dreams of a large desk in a well-lit, well-appointed office.  Mahogany, or walnut top.  Something befitting the master and his skill at the craft.
+
+But it didn't work.  It couldn't work.  To write, King needed that tiny, cramped desk, jammed under the eaves, with its menacing nail spike full up with rejection notices and "sorry, not what we're looking for at this time" responses.
+
+## The Protocol That Removes Distraction
+
+Gemini text (of which this essay is an example) is blessedly devoid of rich expression.  You can make paragraphs.  Or links.  But no links in the paragraphs please.  Images?  Perish the thought.  Lists are okay, quotations and preformatted blocks (for code snippets, no doubt) -- all fine and acceptable.
+
+But hell, you can't even (officially, even) **boldface** anything.
+
+It's wonderful and I love it.  The form frees me from the distractions of worrying about heading structure, formatting, aesthetics.  I can only focus on the words.  The sentences.  The rhythm of the writing.  And because it's all I _can_ focus on, it's all I _do_ focus on.
+
+Even if I **do** sometimes splurge on some boldface and emphasis glyphography...
