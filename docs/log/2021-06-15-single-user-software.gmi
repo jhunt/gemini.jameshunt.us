@@ -1,0 +1,33 @@
+# Single-User Software
+
+In my freelancer life, I'm constantly on the lookout for tools (usually software) that make life easier.  A good tool should remove the tedium of a task, offloading as much as possible onto the computer bits of the system that thrive on repetition.  Calendar and appointment management software is a good example of such a tool.  The computer is way better at collating timestamped bits of data, be it events, reminders, or appointments, and presenting them to me in order, showing which ones have past, and which ones are upcoming.
+
+Such tools exist in virtually every facet of a freelancer's day-to-day: calendaring, task management, communications (email, chat), billing, etc.  Most of them are built with economic reward as the primary motivation.  Google doesn't just give you gmail for free.  Their "business" offering (christened "G Suite" but recently renamed to "G Workspace") costs.
+
+Task management software is no different.  A colleague and fellow freelancer once confided in me the amount of money he spends monthly on such software and WOW.  Just wow.
+
+To maximize eventual profit, these software products have to cater to a wide and varied audience.  Dozens of use cases, scads of features, and (usually at least) the always-on SaaS model factor heavily into the design and composition.
+
+But I want to talk about another paradigm: the single-user software product.
+
+## Yeoperson Programmers
+
+A _yeoman_ is defined as:
+
+> a man holding and cultivating a small landed estate; a freeholder.
+
+I now consider myself a Yeoperson Programmer.  I have some land resources (compute cores and memory stores) that I can cultivate with code and logic of my own making.  I used to follow the pattern laid down by the larger product offerings, attempting to build vast multi-user systems that catered to several needs, not all of them my own.  I don't truthfully know what my end goal was; some sort of vague and non-specific monetization strategy involving "customers" being so enamored with the system that they throw money at me?
+
+Starting with Vault of Cardboard, a few years back, I realized that I ought to instead write software for myself.
+
+=> https://vaultofcardboard.com Vault of Cardboard
+
+From that practice -- only adding the features I wanted, and not worrying about others -- I started to form my "single-user" idea of software design.
+
+## Workboard
+
+Naturally, when I once again found myself casting about for work tracking software (something like Trello but without all the Jira), I built something.  For me.  Literally.  There are no users; the whole system currently sits behind an HTTP basic authentication barrier to which only I have the keys.  The software doesn't differentiate users at all.  There is no data tenancy.  All of the work is tracked as if a single person is in charge.
+
+I wish more people would build software for themselves, rather than build themselves around the available software.  We have enough frameworks, deployment platforms, and language libraries that throwing together a usable, novel, and above all *tailored* computer system is accessible, if not trivial.
+
+Why not try it out today?
