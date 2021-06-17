@@ -12,6 +12,8 @@ conf/gemini-key.rsa:
 index:
 	(cat parts/index.gmi && echo && \
 	 find docs/log -name '*.gmi' | sort -r | xargs ./bin/index-log-entry) > docs/index.gmi
+	(cat parts/log/index.gmi && echo && \
+	 find docs/log -name '*.gmi' | sort -r | xargs ./bin/index-log-entry) > docs/log/index.gmi
 
 up: cert
 	docker-compose -p gemini up -d
