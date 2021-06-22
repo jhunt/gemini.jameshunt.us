@@ -1,0 +1,17 @@
+# Conceptual Consistency
+
+I've been doing a fair bit of API integration lately, and I've identified two different ways of thinking about it.
+
+On one hand, there's the "wrap and improve" school of thought.  When integrating using this approach, the upstream API is a means to an end, and is not necessarily the most desirable means.  I find myself inventing new concepts, melding together upstream concepts, and hiding as many unnecessary details as possible.
+
+On the other, there's the "represent, don't reimplement" ideology.  Under this model, the API is the interface, and my job as an integrator is to build the shallowest, leanest wrapper as I can, with only modest accommodation for language idioms.  People familiar with the upstream API will be comfortable and at home with this veneer of an integration, because they only have to (mechanically) translate what they know about the API itself into the language used for integration.
+
+## Yes, But Which Is Better?
+
+Both.
+
+The main point I want to make here is that -- regardless of which school you adhere to -- being consistent is the most important aspect.  There are advantages and disadvantages to each approach, but if you attempt to hedge your bets, you get complication above and beyond the sum of its parts.
+
+For any given interaction with the integration library, callers will first have to determine which approach you took.  Was the upstream API "good enough" to the eyes of the integrator?  If not, where are the deficiencies.  By blending both schools of thought, you rob the caller of the ability to "just know" whether they should follow the upstream documentation for the API or your own (or worse yet, if they have to dive into the actual implementation code).
+
+Consistency, above all things, should be a guiding principal in any additional abstraction layer.

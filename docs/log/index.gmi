@@ -2,6 +2,7 @@
 
 This is my log; a semi-daily ramble I go on to keep the writing skills sharp and the wit even sharper.
 
+=> /log/2021-06-22-conceptual-consistency.gmi [2021-06-22] Conceptual Consistency
 => /log/2021-06-15-single-user-software.gmi [2021-06-15] Single-User Software
 => /log/2021-06-14a-focusing-on-the-words.gmi [2021-06-14] Focusing on the Words
 => /log/2021-06-14-lets-not-call-it-remote-work.gmi [2021-06-14] Let's Not Call It Remote Work
