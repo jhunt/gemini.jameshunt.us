@@ -1,0 +1,15 @@
+# Welcome to Gemini!
+
+Hello there.
+
+This is gemprox, also known as gemini.zyxl.xyz (prounounced zixl-dot-ziz).  It's a gateway from the HTTP Web into Gemini space, where the written word rules and text is still in fashion.
+
+## Where to Go
+
+Here's a set of sites I regularly read and/or write
+
+=> gemini://jameshunt.us/log           My Gemlog (over at jameshunt.us)
+
+=> gemini://gemini.circumlunar.space   The protocol / spec for Gemini itself
+
+=> gemini://rawtext.club/~sloum/spacewalk.gmi   SPACEWALK (an aggregator)

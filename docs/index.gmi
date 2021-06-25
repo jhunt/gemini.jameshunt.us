@@ -6,6 +6,10 @@ I also have an HTTP site:
 
 => https://jameshunt.us
 
+and I run an HTTP -> Gemini proxy, for the public benefit:
+
+=> https://gemini.zyxl.xyz/
+
 I'm also on Twitter, @iamjameshunt, and my code is (mostly) all on GitHub.
 
 => https://twitter.com/iamjameshunt

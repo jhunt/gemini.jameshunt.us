@@ -1,0 +1,24 @@
+# gemprox
+
+What is it?
+
+gemprox is a Gemini HTTP proxy.  It listens on TCP 80/443 for specially crafted HTTP requests, and issues requests into the Gemini network for identified resources.  Doing so opens up the Gemini world to the larger audience of "the Web", letting people who lack Gemini clients but do have one (or three) web browsers participate.
+
+Here's my Gemini home page, available on the world-wide web:
+
+=> https://gemini.zyxl.xyz/gemini/jameshunt.us/
+
+The code is available on GitHub, if you want to take it for a spin, ask questions (via GitHub Issues) or suggest changes (via Pull Requests).
+
+=> https://github.com/jhunt/gemprox
+
+You're free to use my gemprox for your own Gemini sites, but if you want to run your own proxy, it's available as a Docker container image, on Docker Hub:
+
+```shell transcript for running gemproxy via docker
+docker run --rm -d \
+  --name gemprox1 \
+  -p 80:5000 \
+  iamjameshunt/gemprox:latest
+```
+
+Enjoy!
