@@ -1,0 +1,25 @@
+# Trends in Technology
+
+Has anyone else with a 10+ year vantage point on the whole technology industry noticed this trend:
+
+We seem to be moving to chunkier abstractions as (a) time passes and (b) performance gets cheaper.
+
+In 2001, my primary concerns while building software was what operating system - web, Windows, or Linux - the application would run on.  That drove the choice of language.
+
+By 2011, attention shifted to libraries and frameworks.  Find the right library for a task, or the right framework for a type of application, and that dictated language and platform.
+
+(The web had won by this point, so all platforms were web platform).
+
+Ruby on Rails is the reason I learned Ruby, not the other way around.
+
+Here in 2021, my system design starts with bigger components that I didn't write: am I using PostgreSQL or Redis?  I then write the "missing bits" in whatever language is most convenient.
+
+I'm drafting an essay on designing cloud-native systems, hence my curiosity:
+
+Is this a trend you've noticed?
+
+Is it related to industry change or individual growth?
+
+Am I just getting too old for the young person's game of "Ooh! Shiny!!"
+
+Email me, <gemini at jameshunt dot us>, if you've got thoughts!
