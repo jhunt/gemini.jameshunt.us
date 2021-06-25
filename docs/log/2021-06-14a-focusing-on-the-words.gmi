@@ -12,7 +12,7 @@ Eventually, however, the realities of operating a site on the world wide web cau
 
 ## Back to Basics With Gemini
 
-A few days ago, I met Gemini, a new protocol for sharing information atop the Internet, if not via the world wide web.  Heavily inspired by Gopher, a protocol that predates HTTP and what we know call just "the web", Gemini is the definition of no-frills.  There are no cookies.  No ads.  No scripts.  Just words.  Beautiful, precious words.
+A few days ago, I met Gemini, a new protocol for sharing information atop the Internet, if not via the world wide web.  Heavily inspired by Gopher, a protocol that predates HTTP and what we now call just "the web", Gemini is the definition of no-frills.  There are no cookies.  No ads.  No scripts.  Just words.  Beautiful, precious words.
 
 Maya Angelou is known for writing in empty hotel rooms.  She would ask the hotel staff to remove the paintings from the wall, creating an environment with as few distractions as possible.  No music.  No noise.  Nothing to look at.  Just a place, to write.
 
