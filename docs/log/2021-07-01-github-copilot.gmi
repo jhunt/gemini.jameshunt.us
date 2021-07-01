@@ -1,0 +1,92 @@
+# GitHub Copilot
+
+Twitter went a little crazy yesterday with the news of GitHub's new Copilot ... thing.
+
+Copilot is a neural network that looks at the code you've written and suggests code that you might write next.  For input, it uses the vast corpus of public repositories on GitHub.  GitHub is billing it as Artificial Intelligence, calling Copilot your AI-fueled pair programmer.  I think that's a bit over the top and hyperbolic, but it's marketing, mostly, so what can you do?
+
+There are several structural problems with using machine learning to write code.
+
+## Most Code is Buggy
+
+One of the mainstays of the F/OSS movement is that letting more people review the code means there will be fewer bugs.  If enough people see the problematic code, the thinking goes, someone will spot the aberrant behavior and fix it.  The explosion of code available on GitHub over the past decade tempers the reality of this a bit.  Large swaths of the code on GitHub has only ever been reviewed by its author(s).
+
+One way Copilot may have mitigated this was by pruning their input data set.  The most effective barrier to entry would be "does the code work?"  Does it compile?  Does it pass its internal unit test suites?
+
+This sounds good in theory, but breaks down when you consider the difficulty of automating the fitness function.  Even in something like the CPAN Perl community, a group of projects that are homogeneous language-wise if not platform- or author-wise, it's difficult to automate the builds without deep domain expertise.  I once set out to do this, building CPAN modules into RPM packages, mechanically.
+
+=> https://github.com/jhunt/cpanimal
+
+What I found is that something like 80-90% of the modules out there could be built, tested, and packaged up for distribution using only a handful of common Perl-isms.  The remaining 10-20% however, were so varied and wild that I ended up writing in custom handlers keyed to the presence of files, module names, etc.
+
+And that was just for Perl, and only for CPAN distributions.
+
+I've long since moved on from cpanimal -- the last commit was in the fall of 2015 -- which brings me to another fitness test for Copilot corpus inclusion: freshness.  There's a fair number of stale repositories on GitHub.  Anecdotally, I wouldn't bet against anyone who claimed that over half of my personal repos were 12+ months without a commit.
+
+So we could use freshness as a gate for Copilot's corpus.  Except for two things: false positives and false negatives.
+
+A false negative in this case is a repository that is mature and stable, and therefore has longer cycle time between commits.  I've often argued that at some point software has to be considered "finished".  You cannot sprint forever.  Eventually you will tie off most of the loose ends, accept the weird idiosyncrasies as canon behavior, and move into maintenance mode.  When this happens, your commit cadence necessarily slows down.
+
+A false positive occurs when there are commits regularly being made that do not in any way reflect the live-ness of the project.  The incredible industry-wide adoption of CI/CD tooling over the past several years has driven this.  Some pipelines regularly bump dependencies and rebuild / re-test / re-push.  Others exist to incorporate data and non-code changes, automatically, from outside sources.  These are not indicators that a project is active, or mature, just that it has commits.
+
+Okay, so if we can't exclude repositories we cannot build (for fear of excluding too much) and we can't exclude repositories on the basis of freshness (for fear of excluding too little), what can we do?
+
+Stars?
+
+We could put a minimum number of stars (GitHub's version of Twitter "likes") so that only projects with widespread adoption get included.  These "mainstream" code bases surely must be of above-median quality, since they've garnered so much attention, right?
+
+Except that attention is not an indicator of much of anything but the ability to draw attention to oneself.  Do you star every piece of plumbing infrastructure you use?  Or did you just star the Kubernetes project for fear of missing out?
+
+(kubernetes/kubernetes had 78k stars when this was written.  nginx/nginx had 14k.  Life's not fair)
+
+No matter which way you try to constrain the input to Copilot, you lose.  There's a lot of bad code out there, and it's being used to train an "AI" to write more code, just like it.  Garbage in, garbage out.
+
+
+## Licensing Issues - So Many Licensing Issues
+
+This one is thorny beyond belief.  The GPL is a "copyleft" license that guarantees licensees the same rights that the licensor was given.  It's designed in part to keep software open, and to prevent corporations from absconding with the hard work (usually uncompensated) of F/OSS developers.  Legally, inclusion of parts or all of a GPL-licensed codebase into another codebase forces the distributor to license the whole shebang GPL.  Technically, this comes down to substring matching.
+
+Copilot muddies the waters here.  If AI looked at all the GPL code in the world, and produced something close to the input code strings, is that a derivative work?  In the world of corporate copyright and intellectual property, the lawyers would argue that the AI agent was "tainted" - having seen the code with a copyright claim, other works cannot be proven to NOT be derivative.
+
+This is why you see people talk about "clean room" implementations.  "Your honor, I never saw the source code in question and did not have any contact with Acme Co. while I was writing this GPL'd implementation"
+
+(Incidentally, this was one of the huge sources of suspense / drama in Netflix's _Halt and Catch Fire_ series, but as it relates to the trade secrets of the original IBM PC.)
+
+All of the discussion around what is GPL and what isn't GPL when an AI is involved misses the larger loophole.  Did GitHub verify the licensing claims made by projects?  I can take the Apache source code, fork it, replace all of the copyright notices with MIT and push it to GitHub.  Sure, that's a breach of license, but did the AI training program know that?
+
+
+## But, My Job!
+
+Lots of people are afraid that Copilot means they will lose their livelihood.
+
+If you get paid to copy and paste from Stack Overflow, with zero thought of design or architecture, then yes, you're probably at risk.  Otherwise, don't worry.  This industry has been "automating" away the job of programmers for literal DECADEs and there's more developers working today than ever before.
+
+The machines aren't coming for your job.
+
+
+## Barriers to Language Adoption
+
+This is the topic that crossed my feed and led to a lengthy discussion: will Copilot become a necessity for programming language adoption?
+
+No.
+
+The premise here is that Copilot will become so phenomenally useful to programmers that no programmer will be able to write code without it, or at least will prefer languages that already have good Copilot support.
+
+Except new languages, which haven't even been invented yet, have no corpus for Copilot to consume.  Does this put them at a disadvantage?  Will their uptake be limited or stymied outright?  Have we seen the end of language innovation?
+
+Again, no.
+
+Languages see adoption for a variety of reasons, outside of IDE support, syntax highlighting rules, or AI-assisted programming.  I think it's more fruitful, however, to look at who picks up new languages, and who relies on tools like Copilot.
+
+People pick up new languages (new-to-the-world, not new-to-them) for a couple of reasons:
+
+- It solves a problem, fundamentally, that I'm currently working around (painfully) with another language
+- The language and its standard library isn't yet finalized, I can contribute here!
+- The language ecosystem is still evolving, I can stake a claim to the library namespace!
+
+Go, for example, solved the concurrency problem with goroutines.  They are a joy to work with.
+
+Perl fixed text processing.  Dealing with regular expressions and manipulating text in other languages is slow, bulky, and inconvenient by comparison.
+
+Ruby fixed the edit / compile / test cycle with a modern REPL.  (I still maintain that IRB is the best part of Ruby, don't @ me)
+
+The last two are "personal glory" things.  With a new language, you have tabula rasa - a blank slate for implementing all the non-language parts of a language.  How does testing work?  How do I get an HTTP server?  What networking primitives exist?  None of those things are going to be assisted, or even held back by a lack of Copilot presence.
