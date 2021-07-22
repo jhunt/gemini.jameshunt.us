@@ -1,0 +1,11 @@
+# Redoc: OpenAPI Swagger HTML Rendering
+
+I've been doing a lot of work with Swagger / OpenAPI lately.  Spec-writing helps me clarify my thoughts, much like essaying.  Thinking through the things that the callers will want or need helps immensely.  What do they know?  How would they expect to tell me?  To date, I've been using the swagger.io editor for both validation and previewing.
+
+=> https://editor.swagger.io
+
+However, I'll soon be moving over to Redoc, a wonderful little (Dockerized) SPA that downloads specs from the 'net (or locally, if you embed them into the container) and turns it into an easy-on-the-eyes web page.
+
+I've forked the repo here, for safe-keeping:
+
+=> https://github.com/jhunt-forks/redoc
